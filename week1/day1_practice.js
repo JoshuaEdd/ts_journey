@@ -1,7 +1,5 @@
 // *DAY 1 PRACTICE: TYPES AND COERCION*
 
-// PRACTICE (file: experiments.js)
-
 console.log("5" + 3); // thought would throw an error, but it concatenates to "53"
 console.log("5" - 3); // thought would throw an error, but it coerces to number and returns 2
 console.log("5" * "2"); // thought would throw an error, but it coerces both to numbers and returns 10
@@ -38,15 +36,8 @@ const person = { name: "Ada" };
 person.name = "Grace";
 console.log(person); // { name: "Grace" } - this works because we are modifying the contents of the object, not reassigning the variable.
 
-// Understand why the first throws but the second works. const locks the binding, not the contents.
 
-
-// Then template literals (the backtick is the key above Tab, not a quote):
 const userName = "Joshua";
 const age = 18;
 console.log(`Name: ${userName}, age: ${age}`);
 console.log(`Next year: ${age + 1}`);
-
-// DELIVERABLE: at the bottom of the file, a comment block listing at least five results that surprised you, in your own words.
-
-// Two concepts this teaches: the + operator joins text if either side is a string, but -, *, / always do maths. And computed decimals are approximate, which is why 0.1 + 0.2 is not exactly 0.3.
